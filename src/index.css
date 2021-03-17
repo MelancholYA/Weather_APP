@@ -201,6 +201,65 @@ a {
   width: 100% !important;
 }
 
+@media (max-width: 600px) {
+  .Current {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 100vh;
+    background-attachment: fixed !important;
+  }
+  .Current .main {
+    min-height: 100vh;
+    width: auto;
+  }
+  .Current .main h5 {
+    padding: 5px;
+  }
+  .Current .main .country {
+    width: auto;
+    height: auto;
+    white-space: pre-wrap;
+    font-size: xxx-large;
+  }
+  .Current .details {
+    background: black;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+  }
+  .Current .details .recharts-wrapper {
+    width: 100% !important;
+    margin: 15px 0 !important;
+    margin-left: -10px !important;
+    height: auto !important;
+  }
+  .Current .details .recharts-wrapper svg {
+    height: auto !important;
+  }
+  .Current .details .upper {
+    padding: 5px;
+    margin: 5px;
+  }
+  .Current .details .upper li {
+    margin: auto;
+  }
+  .Current .details .lower {
+    padding: 15px;
+  }
+  .Current .main .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .Current .main .header .icon {
+    margin: auto;
+  }
+}
+
 .error {
   background: #fd7e7e;
   padding: 15px;

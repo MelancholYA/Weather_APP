@@ -126,7 +126,59 @@ a {
     }
   }
 }
+@media (max-width: 600px) {
+  .Current {
+    flex-direction: column;
+    min-height: 100vh;
+    background-attachment: fixed !important;
 
+    .main {
+      min-height: 100vh;
+      width: auto;
+      h5 {
+        padding: 5px;
+      }
+      .country {
+        width: auto;
+        height: auto;
+        white-space: pre-wrap;
+        font-size: xxx-large;
+      }
+    }
+    .details {
+      background: black;
+      padding: 5px;
+      width: 100%;
+      height: auto;
+      .recharts-wrapper {
+        width: 100% !important;
+        margin: 15px 0 !important;
+        margin-left: -10px !important;
+        height: auto !important;
+        svg {
+          height: auto !important;
+        }
+      }
+      .upper {
+        padding: 5px;
+        margin: 5px;
+        li {
+          margin: auto;
+        }
+      }
+      .lower {
+        padding: 15px;
+      }
+    }
+  }
+  .Current .main .header {
+    flex-direction: column;
+    width: 100%;
+    .icon {
+      margin: auto;
+    }
+  }
+}
 .error {
   background: #fd7e7e;
   padding: 15px;
