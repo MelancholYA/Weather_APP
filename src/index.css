@@ -1,13 +1,210 @@
-body {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  line-height: 1.4;
+  font-family: "timeburner";
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.Current {
+  position: relative;
+  background-size: cover !important;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 0;
+  color: white;
+}
+
+.Current::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000033;
+  z-index: -1;
+}
+
+.Current .search {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  border-bottom: 3px solid #e4e3e3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Current .search input {
+  all: unset;
+  color: white;
+  margin: 0 5px;
+}
+
+.Current .search input::-webkit-input-placeholder {
+  color: wheat;
+}
+
+.Current .search input:-ms-input-placeholder {
+  color: wheat;
+}
+
+.Current .search input::-ms-input-placeholder {
+  color: wheat;
+}
+
+.Current .search input::placeholder {
+  color: wheat;
+}
+
+.Current .search i {
+  font-size: 25px;
+}
+
+.Current .main {
+  height: 100%;
+  width: -webkit-fill-available;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.Current .main .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.Current .main h1 {
+  font-size: 70px;
+}
+
+.Current .main .country {
+  width: 420px;
+  height: 100px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.Current .main h5 {
+  font-size: 30px;
+}
+
+.Current .main .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Current .main .header .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 55px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0000006b;
+  border-radius: 9px;
+  padding-right: 20px;
+  margin-left: 20px;
+}
+
+.Current .main .header .icon span {
+  font-size: 28px;
+}
+
+.Current .details {
+  height: 100%;
+  min-width: 40%;
+  background: #00000073;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Current .details .upper {
+  border-bottom: 1px solid #a2a2a2;
+  padding: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.Current .details .upper li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px 10px;
+  margin-right: 70px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Current .details .recharts-wrapper {
+  width: 100% !important;
+}
+
+.Current .details .recharts-wrapper svg {
+  width: 100% !important;
+}
+
+.error {
+  background: #fd7e7e;
+  padding: 15px;
+  -webkit-box-shadow: 0 0 14px #35171775;
+          box-shadow: 0 0 14px #35171775;
+}
+/*# sourceMappingURL=index.css.map */

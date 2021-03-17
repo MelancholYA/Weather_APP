@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  line-height: 1.4;
+  font-family: "timeburner";
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.Current {
+  position: relative;
+  background-size: cover !important;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 0;
+  color: white;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000033;
+    z-index: -1;
+  }
+  .search {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border-bottom: 3px solid #e4e3e3;
+    display: flex;
+    align-items: center;
+    input {
+      all: unset;
+      color: white;
+      margin: 0 5px;
+      &::placeholder {
+        color: wheat;
+      }
+    }
+    i {
+      font-size: 25px;
+    }
+  }
+  .main {
+    height: 100%;
+    width: -webkit-fill-available;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    .holder {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    .country {
+      width: 420px;
+      height: 100px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    h5 {
+      font-size: 30px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .icon {
+        display: flex;
+        margin: 0 55px;
+        align-items: center;
+        background: #0000006b;
+        border-radius: 9px;
+        padding-right: 20px;
+        margin-left: 20px;
+        span {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  .details {
+    height: 100%;
+    min-width: 40%;
+    background: #00000073;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .upper {
+      border-bottom: 1px solid #a2a2a2;
+      padding: 15px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 10px;
+        margin-right: 70px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .recharts-wrapper {
+      width: 100% !important;
+      svg {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.error {
+  background: #fd7e7e;
+  padding: 15px;
+  box-shadow: 0 0 14px #35171775;
+}
