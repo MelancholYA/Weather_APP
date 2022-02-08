@@ -1,11 +1,10 @@
-import CurentWeather from "./componants/parts.js/CurentWeather";
-import Newchart from "./componants/parts.js/Newchart";
+import CurentWeather from './componants/parts.js/CurentWeather';
 function App() {
-  return (
-    <div className="App">
-      <CurentWeather />
-    </div>
-  );
+	return (
+		<div className='App'>
+			<CurentWeather />
+		</div>
+	);
 }
 
 export default App;
